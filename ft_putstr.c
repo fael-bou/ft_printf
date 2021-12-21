@@ -12,9 +12,9 @@
 
 #include<unistd.h>
 
-int ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (str == NULL)
