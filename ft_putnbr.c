@@ -24,17 +24,7 @@ int	ft_putnbr(int nb)
 		nb = nb * (-1);
 		count += write (1, "-", 1);
 	}
-	if (nb >= 0)
-	{
-		if (nb >= 0 && nb < 10)
-			count += ft_putchar (nb + '0');
-		if (nb >= 10)
-		{
-			count += ft_putnbr(nb / 10);
-			count += ft_putnbr(nb % 10);
-		}
-	}
-	return (count);
+	return (ft_put_unsigned_int(nb) + count);
 }
 
 int	ft_put_unsigned_int(unsigned int nb)
